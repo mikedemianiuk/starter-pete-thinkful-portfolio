@@ -1,5 +1,6 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+/* Note: Add this link tag to your HTML head section instead of using @import:
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet">
+*/
 
 body {
   background-color: #eae2b7;
@@ -18,7 +19,10 @@ h3 {
 
 /* Header */
 header {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 /* Containers */
@@ -51,8 +55,42 @@ a:hover {
   color: #f77f00;
 }
 
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
 nav a {
   padding-left: 20px;
+}
+
+/* About section */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.about img {
+  margin-right: 30px;
+}
+
+.intro h2 {
+  text-align: center;
+}
+
+.intro p {
+  text-align: left;
+}
+
+.background {
+  padding: 20px;
 }
 
 /* Images */
@@ -70,6 +108,20 @@ img {
 /* Footer */
 footer {
   text-align: center;
+}
+
+/* Portfolio styles */
+.projects {
+  display: flex;
+  padding: 20px;
+}
+
+.project {
+  margin-right: 20px;
+}
+
+.project p {
+  font-size: 14px;
 }
 
 /* Other page elements */
