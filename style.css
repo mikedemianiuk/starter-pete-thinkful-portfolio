@@ -20,9 +20,13 @@ h3 {
 /* Header */
 header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
+}
+
+header h1 {
+  margin-bottom: 20px;
 }
 
 /* Containers */
@@ -72,21 +76,34 @@ nav a {
 
 /* About section */
 .about {
-  display: flex;
-  align-items: center;
   padding: 20px;
-}
-
-.about img {
-  margin-right: 30px;
-}
-
-.intro h2 {
   text-align: center;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.about-content img {
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.intro h3 {
+  text-align: left;
+  margin-top: 0;
 }
 
 .intro p {
   text-align: left;
+}
+
+.intro ul {
+  text-align: left;
+  padding-left: 20px;
 }
 
 .background {
@@ -122,6 +139,24 @@ footer {
 
 .project p {
   font-size: 14px;
+}
+
+.project h4 {
+  font-family: "Playfair Display", Times, serif;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Contact section */
+.contact {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact ol {
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 /* Other page elements */
