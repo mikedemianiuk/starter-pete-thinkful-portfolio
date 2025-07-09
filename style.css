@@ -150,7 +150,8 @@ footer {
 /* Contact section */
 .contact {
   padding: 20px;
-  text-align: center;
+  /* Remove or override text-align: center if you want direct children to be left-aligned */
+  text-align: left; /* Change to left to align all direct inline/inline-block content to the left */
 }
 
 .contact ol {
