@@ -20,7 +20,7 @@ h3 {
 /* Header */
 header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center; /* Changed to center to align items horizontally in the middle */
   align-items: center;
   padding: 20px;
 }
